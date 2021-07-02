@@ -9,12 +9,72 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-   <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../../css/login.css">
     
     <title>Document</title>
 </head>
 <body>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container"><a href="#" class="navbar-brand">Descomplica Bicho</a>
+          <div class="d-flex ml-auto">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#globalNavbar" aria-controls="globalNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          </div>
+            <div class="collapse navbar-collapse" id="globalNavbar">
+                <form class="form-inline form-navbar my-2 my-lg-0 order-2" action="">
+                    <input class="form-control" name="s" type="text" placeholder="Search">
+                </form>
+                <ul class="navbar-nav mr-auto order-1">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Post
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Cadastrar Post</a>
+                        <a class="dropdown-item" href="#">Avaliar post</a>
+                        
+                    </div>
+                </li>
     
+                </ul>
+                <ul class="navbar-nav d-none d-lg-flex ml-2 order-3">
+                    <li class="nav-item "><a class="nav-link b-login text-success" href="../auth/login.html">Login</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cadastre-se</a>
+                    </li>
+                </ul>
+    
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card card-container">
+           
+            <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+            <p id="profile-name" class="profile-name-card"></p>
+            <form class="form-signin needs-validation">
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="email" id="Email" class="form-control" placeholder="Email address" required autofocus>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <div id="remember" class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
+            </form><!-- /form -->
+            <a href="#" class="forgot-password">
+                Forgot the password?
+            </a>
+        </div><!-- /card-container -->
+    </div><!-- /container -->
+
+      
 </body>
+
 </html>
