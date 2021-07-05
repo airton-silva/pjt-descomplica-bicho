@@ -26,7 +26,7 @@ function validacao(f) {
 
   //Verificação de campo vazio 
     if(f.matricula.value == null || f.email.value == null || f.senha.value == null) {    
-        alert("Preencha todos os campos!");
+        alert("Campos inválidos!");
         return false;
     }
     else if(f.nome.value == null || f.nome.value.lenght < 3){
