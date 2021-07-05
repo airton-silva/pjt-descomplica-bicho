@@ -26,19 +26,18 @@ function validacao(f) {
 
   //Verificação de campo vazio 
     if(f.matricula.value == null || f.email.value == null || f.senha.value == null) {    
-        alert("Campos inválidos!");
-        return false;
+      alert("Campos inválidos!");
+      return false;
     }
-    else if(f.nome.value == null || f.nome.value.lenght < 3){
-        alert("Não existe nome com menos de tres letras!");
-        return false;
+    else if(f.nome.value == null || f.nome.value.length < 3){
+      alert("Não existe nome com menos de tres letras!");
+      return false;
     }
-    else if(f.senha.value < 6){
-        alert("Senha deve ter mais que seis letras!");
-        return false;
+    else if(f.senha.value.length <= 6){
+      alert("Senha deve ter pelo menos seis caracteres!");
+      return false;
     }
     else{
         alert("Usuario cadastrado com sucesso!");        
     }
 }
-
