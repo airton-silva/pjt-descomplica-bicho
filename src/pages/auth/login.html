@@ -10,8 +10,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
    <link rel="stylesheet" href="../../css/login.css">
+   <script type="text/javascript" src="../../js/modal.js"></script>
     
-    <title>Document</title>
+    <title>Descomplica Bicho</title>
 </head>
 <body>
 
@@ -50,29 +51,31 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="card card-container">
-           
-            <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
-            <p id="profile-name" class="profile-name-card"></p>
-            <form class="form-signin needs-validation">
-                <span id="reauth-email" class="reauth-email"></span>
-                <input type="email" id="Email" class="form-control" placeholder="Email address" required autofocus>
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                <div id="remember" class="checkbox">
-                    <label>
-                        <input type="checkbox" value="remember-me"> Remember me
-                    </label>
-                </div>
-                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
-            </form><!-- /form -->
-            <a href="#" class="forgot-password">
-                Forgot the password?
-            </a>
-        </div><!-- /card-container -->
-    </div><!-- /container -->
+    <div class="container login-container">
+        <div class="row">
+            <div class="col-md-6 login-form-2">
+                <h3>Login</h3>
+                <form>
+                    <div class="form-group">
+                        <input name="email" type="text" class="form-control" placeholder="Seu Email" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input name="senha" type="password" class="form-control" placeholder="Sua Senha" value="" />
+                    </div>
+                    <div class="form-group">
+                        <a type="submit" class="btnSubmit" value="Login" onclick ="Login()">Login</a>
+                    
+                    <div class="form-group"></div>
+                       <a type="submit" class="btnSubmit" value="Cancelar" onclick="window.location.href ='../home/home.html'">Cancelar</a>
+                        
+                    </div></br>
+                    <div class="form-group">
+                        <a href="#" class="ForgetPwd" value="Login">Esqueceu a senha?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
       
 </body>
