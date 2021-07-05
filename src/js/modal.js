@@ -21,3 +21,24 @@ function Login() {
     }
     if (done==0) { alert("Dados incorretos, tente novamente"); }
   }
+
+function validacao(f) {
+
+  //Verificação de campo vazio 
+    if(f.matricula.value == null || f.email.value == null || f.senha.value == null) {    
+        alert("Preencha todos os campos!");
+        return false;
+    }
+    else if(f.nome.value == null || f.nome.value.lenght < 3){
+        alert("Não existe nome com menos de tres letras!");
+        return false;
+    }
+    else if(f.senha.value < 6){
+        alert("Senha deve ter mais que seis letras!");
+        return false;
+    }
+    else{
+        alert("Usuario cadastrado com sucesso!");        
+    }
+}
+
