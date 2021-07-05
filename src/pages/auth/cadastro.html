@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="../../css/login.css">
+   <script type="text/javascript" src="../../js/modal.js"></script>
+    
+    <title>Descomplica Bicho</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container"><a href="#" class="navbar-brand">Descomplica Bicho</a>
+          <div class="d-flex ml-auto">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#globalNavbar" aria-controls="globalNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          </div>
+            <div class="collapse navbar-collapse" id="globalNavbar">
+                <form class="form-inline form-navbar my-2 my-lg-0 order-2" action="">
+                    <input class="form-control" name="s" type="text" placeholder="Search">
+                </form>
+                <ul class="navbar-nav mr-auto order-1">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Post
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Cadastrar Post</a>
+                        <a class="dropdown-item" href="#">Avaliar post</a>
+                        
+                    </div>
+                </li>
+    
+                </ul>
+                <ul class="navbar-nav d-none d-lg-flex ml-2 order-3">
+                    <li class="nav-item "><a class="nav-link b-login text-success" href="../auth/login.html">Login</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cadastre-se</a>
+                    </li>
+                </ul>
+    
+            </div>
+        </div>
+    </nav>
+
+    <div class="container login-container">
+        <div class="row">
+            <div class="col-md-6 login-form-2">
+                <h3>Cadastro</h3>
+                <form id="form">
+                    <div class="form-group">
+                        <input id="nome" id="nome" type="text" class="form-control" placeholder="Nome Completo"/>
+                    </div>
+                    <div class="form-group">
+                        <input id="matricula" id="matricula" type="text" class="form-control" placeholder="Matricula"/>
+                    </div>
+                    <div class="form-group">
+                        <input id="curso" id="curso" type="text" class="form-control" placeholder="Curso"/>
+                    </div>
+                    <div class="form-group">
+                        <input id="email" id="email" type="text" class="form-control" placeholder="Email"/>
+                    </div>
+                    <div class="form-group">
+                        <input id="senha" id="senha" type="password" class="form-control" placeholder="Senha"/>
+                    </div>
+                    <div class="form-group">
+                        <input id="senha" id="senha" type="password" class="form-control" placeholder="Confirme sua senha"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btnSubmit" value="Cadastrar" onclick="validacao(form)">
+                    
+                    <div class="form-group"></div>
+                       <a type="submit" class="btnSubmit" value="Cancelar" onclick="window.location.href ='../home/home.html'">Cancelar</a>                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+      
+</body>
+
+</html>
