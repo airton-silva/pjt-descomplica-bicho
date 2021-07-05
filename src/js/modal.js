@@ -16,7 +16,7 @@ function Login() {
     var senha= document.getElementsByName('senha')[0].value;
     senha=senha.toLowerCase();
     if (usuario=="admin" && senha=="admin") {
-      window.location="../home/home.html";
+      window.location="../home/homeUsuario.html";
       done=1;
     }
     if (done==0) { alert("Dados incorretos, tente novamente"); }
