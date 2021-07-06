@@ -9,10 +9,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
    <link rel="stylesheet" href="../../css/style.css">
-   <script src="../../js/login.js"></script>
     
     <title>Descomplica Bicho</title>
 </head>
@@ -27,7 +26,7 @@
       </div>
         <div class="collapse navbar-collapse" id="globalNavbar">
             <form class="form-inline form-navbar my-2 my-lg-0 order-2" action="">
-                <input class="form-control" name="s" type="text" placeholder="Search">
+                <input class="form-control" name="s" type="text" placeholder="Search">&nbsp;&nbsp;
             </form>
             <ul class="navbar-nav mr-auto order-1">
             <li class="nav-item dropdown">
@@ -43,14 +42,18 @@
 
             </ul>
             <ul class="navbar-nav d-none d-lg-flex ml-2 order-3">
-                <li class="nav-item "><a class="nav-link b-login text-success" href="../auth/login.html">Login</a></li>
+
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-user" style="margin-top:15px"></i>&nbsp;&nbsp;
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../home/home.html">Sair</a>
+                    
+                </div>
+                
                 <li class="nav-item">
-<<<<<<< HEAD
-                    <a class="nav-link" href="#" onclick="logout()">Cadastre-se</a>
-                    <!-- <a class="nav-link" href="#" onclick="logout()">Sair</a> -->
-=======
                     <a class="nav-link" href="../auth/cadastro.html">Cadastre-se</a>
->>>>>>> eb11fd54cb39a066cc39fd8ebe0ba570afa460f0
                 </li>
             </ul>
 
@@ -111,17 +114,14 @@
                         </div>
 
                         <div class="col-md-2 offset-md-3">
-                            <a href="respostaPoster.html" class="text-success">
-                                 <h4 class="text-center text-success"><i class="fas fa-check"></i>4</h4>
-                                <P class="text-center text-success"> Respostas </P>
-                            </a>
+                            <h4 class="text-center text-success"><i class="fas fa-check"></i>4</h4>
+                            <P class="text-center text-success">Respostas</P>
                         </div>
 
                         <br>                        
                         <div class="col-md-3 offset-md-1">Criado Por: Antony Cameron</div>
                         <div class="col-md-2"> Em: 20/01/2021 </div>
                         <div class="col-md-3">Atualizado em: 30/04/2021</div>
-                        <div class="col-md-1 offset-md-1"><a href="show.html" class="btn btn-info">Detalhes</a></div>
                         
                     </div>
 
@@ -148,38 +148,7 @@
                         <br>                        
                         <div class="col-md-3 offset-md-1">Criado Por: Carla Maria</div>
                         <div class="col-md-2"> Em: 20/01/2021 </div>
-                        <div class="col-md-3">Atualizado em: 30/05/2021</div>
-                        <div class="col-md-1 offset-md-1"><a href="" class="btn btn-info">Detalhes</a></div>
-                        
-                        
-                    </div>
-
-                </article>
-
-                <article class="forum-index-articles">
-                    <br>
-                    <div class="row">
-                        <div class="col-md-1">
-                            <a href="#  " title="Link do GitHub" class="forum-index-article-top">
-                                <img class="img-circle forum-index-article-user avatar" src="https://gravatar.com/avatar/7e858aacc566834a2faf77936eadca07.jpg?s=150&amp;d=mm&amp;r=g" alt="por ">
-                            </a>    
-                        </div>
-
-                        <div class="col-md-6">
-                            <h3>Html e Css</h3>
-                        </div>
-
-                        <div class="col-md-2 offset-md-3">
-                            <h4 class="text-center text-success"><i class="fas fa-check"></i>1</h4>
-                            <P class="text-center text-success">Respostas</P>
-                        </div>
-
-                        <br>                        
-                        <div class="col-md-3 offset-md-1">Criado Por: cicero Maia</div>
-                        <div class="col-md-2"> Em: 20/01/2020 </div>
-                        <div class="col-md-3">Atualizado em: 30/05/2020</div>
-                        <div class="col-md-1 offset-md-1"><a href="" class="btn btn-info">Detalhes</a></div>
-                        
+                        <div class="col-md-3">Atualizado em: 30/04/2021</div>
                         
                     </div>
 
